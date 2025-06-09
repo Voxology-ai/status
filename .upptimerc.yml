@@ -10,11 +10,6 @@ sites:
     logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
     headers:
       - "x-status-secret: $STATUS_SECRET"
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -32,7 +27,7 @@ status-website:
       href: https://github.com/$OWNER/$REPO
     - title: Voxology AI
       href: https://voxology.ai
-  theme: ocean # Options: light, dark, night, ocean
+  theme: light # Options: light, dark, night, ocean
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
