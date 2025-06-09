@@ -26,7 +26,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: status.voxology.ai
   baseUrl: /status
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://github.com/Voxology-ai/status/blob/master/assets/logo.png
   name: Voxology Status
   introTitle: "**Voxology Status** - Service Health Dashboard"
   introMessage: Real-time monitoring of Voxology AI services and APIs. This page automatically updates to show the current operational status of our systems.
