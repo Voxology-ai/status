@@ -37,6 +37,7 @@ status-website:
       href: https://github.com/$OWNER/$REPO
     - title: Voxology AI
       href: https://voxology.ai
+  theme: ocean # Options: light, dark, night, ocean
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
@@ -49,7 +50,3 @@ workflowSchedule:
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
   uptime: "*/30 * * * *"
-
-# Optional: Add custom theme
-status-website:
-  theme: ocean # Options: light, dark, night, ocean
