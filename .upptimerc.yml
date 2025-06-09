@@ -14,7 +14,7 @@ sites:
   - name: Voxology Agent Dev
     url: https://voxology-functions-dev.azurewebsites.net/api/status
     headers:
-      - "x-status-secret: ${{ secrets.STATUS_SECRET }}"
+      - "x-status-secret: $STATUS_SECRET"
   - name: IPv6 test
     url: forwardemail.net
     port: 80
