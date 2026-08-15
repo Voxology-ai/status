@@ -7,7 +7,7 @@ sites:
     url: https://voxology-functions.azurewebsites.net/api/status
     logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
     headers:
-      - "x-status-secret: $STATUS_SECRET_PROD"
+      - "x-status-secret: $PROD_STATUS_SECRET"
   - name: Voxology Agent Dev
     url: https://voxology-functions-dev.azurewebsites.net/api/status
     logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
