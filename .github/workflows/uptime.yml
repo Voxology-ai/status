@@ -40,4 +40,4 @@ jobs:
           command: "update"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
-          SECRETS_CONTEXT: '{"STATUS_SECRET":${{ toJson(secrets.STATUS_SECRET) }},"PROD_STATUS_SECRET":${{ toJson(secrets.PROD_STATUS_SECRET) }}}'
+          SECRETS_CONTEXT: '{"PROD_STATUS_SECRET":${{ toJson(secrets.PROD_STATUS_SECRET) }}}'

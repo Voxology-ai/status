@@ -36,19 +36,13 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
-      - name: Update template
-        uses: upptime/uptime-monitor@v1.43.15
-        with:
-          command: "update-template"
-        env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Update response time
         uses: upptime/uptime-monitor@v1.43.15
         with:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
-          SECRETS_CONTEXT: '{"STATUS_SECRET":${{ toJson(secrets.STATUS_SECRET) }},"PROD_STATUS_SECRET":${{ toJson(secrets.PROD_STATUS_SECRET) }}}'
+          SECRETS_CONTEXT: '{"PROD_STATUS_SECRET":${{ toJson(secrets.PROD_STATUS_SECRET) }}}'
       - name: Update summary in README
         uses: upptime/uptime-monitor@v1.43.15
         with:
@@ -74,13 +68,3 @@ jobs:
           force_orphan: "false"
           user_name: "Upptime Bot"
           user_email: "73812536+upptime-bot@users.noreply.github.com"
-      - name: Restore required workflow permissions
-        run: |
-          python3 scripts/patch-upptime-workflow-permissions.py
-          if ! git diff --quiet -- .github/workflows; then
-            git config user.name "Upptime Bot"
-            git config user.email "73812536+upptime-bot@users.noreply.github.com"
-            git add .github/workflows
-            git commit -m ":wrench: Preserve workflow permissions [skip ci]"
-            git push
-          fi
