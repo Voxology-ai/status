@@ -4,7 +4,6 @@ repo: status # The name of this repository
 
 # Only these secrets are exposed to the uptime-monitor action (not all repo secrets).
 secrets:
-  - STATUS_SECRET
   - PROD_STATUS_SECRET
 
 sites:
@@ -13,11 +12,6 @@ sites:
     logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
     headers:
       - "x-status-secret: $PROD_STATUS_SECRET"
-  - name: Voxology Agent Dev
-    url: https://voxology-functions-dev.azurewebsites.net/api/status
-    logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
-    headers:
-      - "x-status-secret: $STATUS_SECRET"
   - name: Google
     url: https://www.google.com
 
