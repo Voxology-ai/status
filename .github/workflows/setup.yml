@@ -33,20 +33,20 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
       - name: Update template
-        uses: upptime/uptime-monitor@v1.40.1
+        uses: upptime/uptime-monitor@v1.43.15
         with:
           command: "update-template"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Update response time
-        uses: upptime/uptime-monitor@v1.40.1
+        uses: upptime/uptime-monitor@v1.43.15
         with:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
           SECRETS_CONTEXT: '{"STATUS_SECRET":${{ toJson(secrets.STATUS_SECRET) }},"PROD_STATUS_SECRET":${{ toJson(secrets.PROD_STATUS_SECRET) }}}'
       - name: Update summary in README
-        uses: upptime/uptime-monitor@v1.40.1
+        uses: upptime/uptime-monitor@v1.43.15
         with:
           command: "readme"
         env:
@@ -57,7 +57,7 @@ jobs:
           workflow: Graphs CI
           token: ${{ secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@v1.40.1
+        uses: upptime/uptime-monitor@v1.43.15
         with:
           command: "site"
         env:
