@@ -6,15 +6,15 @@
     "slug": "voxology-agent-prod",
     "status": "up",
     "uptime": "0.00%",
-    "uptimeDay": "0.03%",
-    "uptimeWeek": "0.00%",
+    "uptimeDay": "0.30%",
+    "uptimeWeek": "0.04%",
     "uptimeMonth": "0.00%",
     "uptimeYear": "0.00%",
-    "time": 209,
-    "timeDay": 89,
-    "timeWeek": 89,
-    "timeMonth": 89,
-    "timeYear": 89,
+    "time": 188,
+    "timeDay": 67,
+    "timeWeek": 67,
+    "timeMonth": 67,
+    "timeYear": 67,
     "dailyMinutesDown": {
       "2026-08-18": 1231,
       "2026-08-17": 1440,
@@ -384,26 +384,6 @@
     }
   },
   {
-    "name": "Voxology Agent Dev",
-    "url": "https://voxology-functions-dev.azurewebsites.net/api/status",
-    "icon": "https://icons.duckduckgo.com/ip3/voxology-functions-dev.azurewebsites.net.ico",
-    "slug": "voxology-agent-dev",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 238,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
-    "dailyMinutesDown": {
-      "2026-08-18": 0
-    }
-  },
-  {
     "name": "Google",
     "url": "https://www.google.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.google.com.ico",
@@ -414,11 +394,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 95,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "time": 96,
+    "timeDay": 135,
+    "timeWeek": 135,
+    "timeMonth": 135,
+    "timeYear": 135,
     "dailyMinutesDown": {}
   }
 ]
