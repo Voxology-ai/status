@@ -2,6 +2,11 @@
 owner: voxology-ai # Your GitHub organization or username, where this repository lives
 repo: status # The name of this repository
 
+# Only these secrets are exposed to the uptime-monitor action (not all repo secrets).
+secrets:
+  - STATUS_SECRET
+  - PROD_STATUS_SECRET
+
 sites:
   - name: Voxology Agent Prod
     url: https://voxology-functions.azurewebsites.net/api/status
