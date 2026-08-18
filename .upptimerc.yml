@@ -9,7 +9,7 @@ secrets:
 sites:
   - name: Voxology Agent Prod
     url: https://voxology-functions.azurewebsites.net/api/status
-    logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
+    logo: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/logo.png
     headers:
       - "x-status-secret: $PROD_STATUS_SECRET"
   - name: Google
@@ -20,15 +20,15 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: status.voxology.ai
   baseUrl: /status
-  logoUrl: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/vox-logo.svg
+  logoUrl: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/logo.png
+  favicon: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/favicon-96x96.png
+  faviconSvg: https://raw.githubusercontent.com/Voxology-ai/status/master/assets/favicon.svg
   name: Voxology Status
   introTitle: "**Voxology Status** - Service Health Dashboard"
   introMessage: Real-time monitoring of Voxology AI services and APIs. This page automatically updates to show the current operational status of our systems.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
     - title: Voxology AI
       href: https://voxology.ai
   theme: light # Options: light, dark, night, ocean
