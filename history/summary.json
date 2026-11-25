@@ -4,18 +4,20 @@
     "url": "https://voxology-functions.azurewebsites.net/api/status",
     "icon": "https://icons.duckduckgo.com/ip3/voxology-functions.azurewebsites.net.ico",
     "slug": "voxology-agent-prod",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 274,
-    "timeDay": 5156,
-    "timeWeek": 1440,
-    "timeMonth": 487,
-    "timeYear": 277,
-    "dailyMinutesDown": {}
+    "uptimeDay": "97.97%",
+    "uptimeWeek": "99.71%",
+    "uptimeMonth": "99.93%",
+    "uptimeYear": "99.99%",
+    "time": 273,
+    "timeDay": 3486,
+    "timeWeek": 1296,
+    "timeMonth": 477,
+    "timeYear": 276,
+    "dailyMinutesDown": {
+      "2026-11-25": 29
+    }
   },
   {
     "name": "Google",
